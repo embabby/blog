@@ -34,8 +34,24 @@
 
         </ul>
       </li>
-
       <!--END Categories-->
+
+
+      <!--Posts-->
+      <li class="treeview {{(Route::current()->getName() == 'post.index' || Route::current()->getName() =='category.post') ? 'active' : '' }}" >
+    
+        <a href="#">
+          <i class="fa fa-dashboard"></i> <span> Posts </span> <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+
+          <li class="{{(Route::current()->getName() == 'post.index') ? 'active' : ''}}"><a href="{{route('post.index')}}"><i class="fa fa-circle-o"></i> all </a></li>
+
+          <li class="{{(Route::current()->getName() == 'post.create') ? 'active' : ''}}"><a href="{{route('post.create')}}"><i class="fa fa-circle-o"></i> create </a></li>
+
+        </ul>
+      </li>
+      <!--END Posts-->
 
 
       <li>

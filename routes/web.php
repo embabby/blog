@@ -28,9 +28,14 @@ Route::group(['prefix' => 'admin'], function () {
 
   Route::group(['middleware' => 'admin'], function () {
 
-  	//Categories and Subcategories
+  	//Categories
 	 Route::resource('/category', 'Admin\CategoryController');
 	 Route::get('/category/delete/{id}', ['as' => 'category.delete', 'uses' => 'Admin\CategoryController@getDelete']);
+
+
+   //Posts
+   Route::resource('/post', 'Admin\PostController');
+   Route::get('/post/delete/{id}', ['as' => 'post.delete', 'uses' => 'Admin\PostController@getDelete']);
 
 
   	});
