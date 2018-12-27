@@ -1,8 +1,5 @@
 # Junior PHP Web Developer Assignment
 
-* [Requirements](#requirements)
-* [Installation](#installation)
-
 
 ## Requirements
 This project built using **laravel 5.5**, so your php version must be >= **7.0**
