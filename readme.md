@@ -1,4 +1,4 @@
-# Mumm Junior PHP Web Developer Assignment
+# Junior PHP Web Developer Assignment
 
 * [Requirements](#requirements)
 * [Installation](#installation)
