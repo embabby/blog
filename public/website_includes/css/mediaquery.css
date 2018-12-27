@@ -1,0 +1,94 @@
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	body{
+		padding-left: 0 !important;
+	}
+	.navbar-light .navbar-toggler{
+		margin-right: auto;
+	}
+	.navbar .navbar-nav .nav-link{
+      color:#4F4F4F;
+	}
+	.navbar-light ul{
+      padding: 0;
+      margin: 0;
+      background: #f3f3f3;
+   }
+   .navbar-light li{
+      color: #4f4f4f;
+      list-style-type: none;
+      font-size:13px;   
+      padding: 10px 15px;
+      border-bottom:1px solid #ddd;
+   }
+   li.nav-item.sm-nav-cust{
+      display: block;
+   }
+   .navbar-light li a{
+      text-decoration: none;
+   }
+	nav .toggle{
+		display: none;
+	}
+   .head .col-md-9.col-sm-12.align-self-center.d-none.d-sm-block{
+      padding-left: 0;
+   }
+   .col-md-9.col-sm-12.align-self-center{
+      margin-top: 10px;
+   }
+	.search-bar .sort .float-left {
+      float: none !important;
+      display: block;
+   }
+   .search-bar .sort ul.float-right{
+      float: none !important;
+      text-align: center;
+      padding: 0;
+   }
+   .ann .container{
+      padding: 0;
+   }
+   .login .row .form-row, .register .row .form-row{
+      width: 100%;
+   }
+   .contact a.btn.btn-primary.btn-lg{
+      margin-top: 1rem;
+   }
+   form.form-row{
+      margin-right: 0;
+      margin-left: 0;
+   }
+}
+
+/*// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	li.nav-item.sm-nav-cust{
+      display: none;
+   }
+   /* Header */
+   .col-md-3.col-sm-12.text-center{
+      margin-bottom: 1rem;
+   }
+}
+
+/*// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	li.nav-item.sm-nav-cust{
+      display: none;
+   }
+}
+
+/*// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	li.nav-item.sm-nav-cust{
+      display: none;
+   }
+}
+
+/* / Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	li.nav-item.sm-nav-cust{
+      display: none;
+   }
+
+}

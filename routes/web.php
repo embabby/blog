@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as'=>'blog.index', 'uses'=>'Blog\BlogController@getIndex']);
 
 
 
@@ -25,13 +23,11 @@ Route::group(['prefix' => 'admin'], function () {
   Route::get('/', ['as' => 'admin.dashboard', 'uses' => 'Admin\AdminController@getDashboard'])->middleware('admin');
   Route::get('logout', ['as' => 'admin.logout', 'uses' => 'Admin\AdminController@getLogout']);
 
-
   Route::group(['middleware' => 'admin'], function () {
 
   	//Categories
 	 Route::resource('/category', 'Admin\CategoryController');
 	 Route::get('/category/delete/{id}', ['as' => 'category.delete', 'uses' => 'Admin\CategoryController@getDelete']);
-
 
    //Posts
    Route::resource('/post', 'Admin\PostController');
@@ -39,11 +35,6 @@ Route::group(['prefix' => 'admin'], function () {
 
 
   	});
-
-
-
-
-
 
 
  });

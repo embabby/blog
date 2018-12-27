@@ -25,13 +25,13 @@
 
                       <div class="form-group">
                         <label>Description</label>
-                        <input class="form-control" type="text" name="description" value="{{$post->description}}">
+                        <input class="form-control" type="text" required name="description" value="{{$post->description}}">
                       </div>
 
 
                       <div class="form-group">
                         <label>Content</label>
-                        <textarea class="form-control" name="content" rows="3"> {{$post->description}} </textarea>
+                        <textarea class="form-control" required name="content" rows="3"> {{$post->description}} </textarea>
                       </div>
 
 

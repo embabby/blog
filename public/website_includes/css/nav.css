@@ -1,0 +1,150 @@
+/* Global */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden; }
+
+/* Navbar Start */
+.navbar-light.navbar {
+  background: #1077A3;
+  color: #FFF;
+  padding: 0; }
+  .navbar-light.navbar .navbar-brand {
+    padding: 0; }
+  .navbar-light.navbar .nav-link {
+    color: #FFF; }
+    .navbar-light.navbar .nav-link:hover {
+      background-color: rgba(238, 238, 238, 0.19);
+      color: rgba(0, 0, 0, 0.7); }
+    .navbar-light.navbar .nav-link .fas {
+      margin: 3px; }
+
+.navbar-default {
+  border: none;
+  max-height: 50px;
+  margin: 0; }
+  .navbar-default .navbar-brand {
+    color: #FFF;
+    font-size: 1.7em; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #FFF; }
+    .navbar-default .navbar-brand span {
+      font-weight: bold; }
+
+.color-change {
+  background: #434950; }
+
+nav {
+  /* Toggle class close*/ }
+  nav .toggle {
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    float: right; }
+    nav .toggle .checker {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      margin: 0; }
+      nav .toggle .checker:checked + span {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        background: transparent; }
+        nav .toggle .checker:checked + span:before, nav .toggle .checker:checked + span:after {
+          top: 0; }
+        nav .toggle .checker:checked + span:before {
+          top: 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        nav .toggle .checker:checked + span:after {
+          top: 0;
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+    nav .toggle span {
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      position: absolute;
+      top: 25px;
+      left: 0; }
+      nav .toggle span:after, nav .toggle span:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        left: 0; }
+      nav .toggle span:after {
+        top: 10px; }
+      nav .toggle span:before {
+        top: -10px; }
+    nav .toggle :hover .checker + span:before {
+      top: 10px; }
+    nav .toggle :hover .checker + span:after {
+      top: -10px; }
+    nav .toggle :hover .checker:checked + span:before {
+      top: 0; }
+    nav .toggle :hover .checker:checked + span:after {
+      top: 0; }
+
+/* Nav tag close*/
+.fixed_menu {
+  width: 30%;
+  height: 100vh;
+  background-color: #f3f3f3;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 1;
+  left: -30%;
+  top: 0; }
+  .fixed_menu ul {
+    padding: 0;
+    margin: 0; }
+  .fixed_menu li {
+    color: #4f4f4f;
+    list-style-type: none;
+    font-size: 13px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd; }
+  .fixed_menu li a {
+    text-decoration: none;
+    color: #4f4f4f; }
+
+/* Navbar End */
+.head {
+  padding: 20px 0; }
+  .head .form-row input:first-of-type {
+    border-top: #1077A3 2px solid;
+    border-radius: 5px 0px 0px 5px;
+    border-left: #1077A3 2px solid;
+    border-bottom: #1077A3 2px solid; }
+  .head .form-row #sCategory {
+    min-height: 40px;
+    background: #f1efef;
+    border-top: #1077A3 2px solid;
+    border-bottom: #1077A3 2px solid;
+    border-radius: 0px; }
+  .head .form-row .btn-primary {
+    background-color: #1077A3;
+    border-color: #1077A3; }
+    .head .form-row .btn-primary:hover {
+      background: #0062cc; }
+
+.color-change, nav .toggle span, nav .toggle span:after, nav .toggle span:before {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  /* Extended Classes End */ }
+
+/*# sourceMappingURL=nav.css.map */
+

@@ -23,18 +23,18 @@
 
                       <div class="form-group">
                         <label>Description</label>
-                        <input class="form-control" type="text" name="description">
+                        <input class="form-control" required type="text" name="description">
                       </div>
 
 
                       <div class="form-group">
                         <label>Content</label>
-                        <textarea class="form-control" name="content" rows="3"></textarea>
+                        <textarea class="form-control" required name="content" rows="3"></textarea>
                       </div>
 
                       <div class="form-group">
                          {!! Form::label('category_id','Category', ['class' => 'control-label']) !!}
-                         {!! Form::select('category_id',$categories,null, ['class' => 'form-control', 'id'=>'cat']) !!}
+                         {!! Form::select('category_id',$categories,null, ['class' => 'form-control', 'id'=>'cat', 'required' => 'required']) !!}
                       </div>
                                        
                      

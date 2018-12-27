@@ -66,6 +66,7 @@ class CategoryController extends Controller
     {
 
       $category = Category::find($id);
+      $category->posts()->delete();
       $category->delete();
       return redirect()->route('category.index')->with( 'message','Category Deleted Successfully');
     }
