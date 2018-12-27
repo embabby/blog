@@ -21,4 +21,5 @@ This project built using **laravel 5.5**, so your php version must be >= **7.0**
 ```
 7. Migrate the tables `php artisan migrate`
 8. Run the project! `php artisan serve`
+9. for admin panel type in url /admin/login and insert 'admin@admin.com' for email and 'admin' for password
 
