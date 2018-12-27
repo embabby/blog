@@ -1,0 +1,1 @@
+@if (Session::has('message'))        <li class="alert alert-info" role="alert" style="text-align: center; list-style: none;" >{{Session::get('message')}}</li>@endif
