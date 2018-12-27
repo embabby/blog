@@ -3,6 +3,8 @@
 
 
 Route::get('/', ['as'=>'blog.index', 'uses'=>'Blog\BlogController@getIndex']);
+Route::get('/{id}', ['as' => 'blog.show', 'uses' => 'Blog\BlogController@getBlog']);
+Route::get('/category/{id}', ['as' => 'categoryPosts.show', 'uses' => 'Blog\BlogController@categoryPosts']);
 
 
 

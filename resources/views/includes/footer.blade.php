@@ -8,13 +8,6 @@
   </div>
 </footer>
 
-<!-- <script src="{{asset('website_includes/js/owl.carousel.min.js')}}"></script> -->
-<!-- <script src="{{asset('website_includes/js/popper.min.js')}}"></script> -->
-<!-- <script src="{{asset('public/website_includes/js/bootstrap.min.js')}}"></script> -->
-
-
-<!-- <script src="{{asset('website_includes/js/main.js')}}"></script> -->
-<!-- <script src="{{asset('website_includes/js/shop.js')}}"></script> -->
 
 </body>
 </html>

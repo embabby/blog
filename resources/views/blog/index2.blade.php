@@ -38,7 +38,7 @@
          <!-- Best Selling End -->
         <div class="">
 
-             <h4>All Posts</h4> 
+             <h4>{{$selected_category->name}} Posts</h4> 
           <div class="row" >
             @foreach ($posts as $post)
 
