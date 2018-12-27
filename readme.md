@@ -1,16 +1,15 @@
-# Mojaz Back-end Developer Assignment
+# Mumm Junior PHP Web Developer Assignment
 
 * [Requirements](#requirements)
 * [Installation](#installation)
-* [Tests](#tests)
-* [API Endpoints](#apis)
+
 
 ## Requirements
 This project built using **laravel 5.5**, so your php version must be >= **7.0**
 
 ## Installation
-1. Clone the source code. `git clone https://github.com/Rochdy/mojaz.git`
-2. Go to inside the project. `cd mojaz`
+1. Clone the source code. `git clone https://github.com/embabby/blog.git`
+2. Go to inside the project. `cd blog`
 3. Run `composer install` to install all the dependencies.
 4. Copy configrations file. `cp .env.example .env`
 5. Create a new database.
