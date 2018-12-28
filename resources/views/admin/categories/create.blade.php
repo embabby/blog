@@ -17,7 +17,7 @@
 
                       <div class="form-group">
                         <label>Name</label>
-                        <input class="form-control" required type="text" name="name" required>
+                        <input class="form-control" required type="text" name="name">
                       </div>
                                                                                                     
                     </div><!-- /.box-body -->
