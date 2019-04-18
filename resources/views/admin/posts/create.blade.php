@@ -18,7 +18,7 @@
 
                       <div class="form-group">
                         <label>Title</label>
-                        <input class="form-control" required type="text" name="title" required>
+                        <input class="form-control" required type="text" name="title" required maxlength="20">
                       </div>
 
                       <div class="form-group">

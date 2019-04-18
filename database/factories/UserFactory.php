@@ -21,3 +21,23 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+
+$factory->define(App\Category::class, function (Faker $faker) {
+    return [
+        'name' => $faker->name
+    ];
+});
+
+
+
+$factory->define(App\Post::class, function ($faker) {
+    return [
+    	'category_id' => function() {
+    		return factory('App\Category')->create()->id;
+    	},
+        'title' => $faker->sentence,
+        'description' => $faker->paragraph,
+        'content' => $faker->paragraph
+    ];
+});

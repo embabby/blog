@@ -17,7 +17,7 @@
          <!-- Best Selling End -->
         <div class="mb-5 p-4 ">
 
-             <h4 class="mb-4">TiTle</h4> 
+             <h4 class="mb-4">{{$post->title}}</h4> 
 
              <p style="background-color: #ff8700;" class="card-subtitle mb-2  px-1 text-light d-inline">{{$post->category->name}}</p>
 

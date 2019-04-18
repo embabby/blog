@@ -14,7 +14,7 @@ class BlogController extends Controller
 
 	public function getIndex(){
       $categories = Category::all();
-      $posts = Post::paginate(12);
+      $posts = Post::latest()->paginate(12);
       
       return view('blog.index',compact('categories','posts'));
      

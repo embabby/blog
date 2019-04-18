@@ -47,7 +47,7 @@
             <div class="card">
               <a href="{{route('blog.show',$post->id)}}" style="color: #000;">
               <div class="card-body">
-                <h5 style="font-weight: bold;" class="card-title">{{str_limit($post->title,19)}}</h5>
+                <h5 style="font-weight: bold;" class="card-title">{{$post->title}}</h5>
                 <p style="background-color: #ff8700;" class="card-subtitle mb-2  px-1 text-light d-inline">{{$post->category->name}}</p>
                 <p style="height: 65px;overflow: hidden;" class="card-text">{{str_limit($post->description,60)}}</p>
                 
